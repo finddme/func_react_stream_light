@@ -31,11 +31,10 @@ def install_system_dependencies():
              
 # install_system_dependencies()
 os.system("pip install crawl4ai")
-os.system("pip install crawl4ai")
+os.system("playwright install")
 os.system("pip install nest-asyncio")
 os.system("crawl4ai-setup")
 os.system("playwright install-deps")
-os.system("playwright install")
 # os.environ['PYTHONPATH'] = os.getcwd()
 
 async def main(args):
