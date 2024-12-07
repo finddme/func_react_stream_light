@@ -1,11 +1,11 @@
-[browser]
-serverAddress = "0.0.0.0"
-serverPort = 8501
+# [browser]
+# serverAddress = "0.0.0.0"
+# serverPort = 8501
 
-[server]
-maxUploadSize = 200
-enableXsrfProtection = false
-enableCORS = false
+# [server]
+# maxUploadSize = 200
+# enableXsrfProtection = false
+# enableCORS = false
 
 # [theme]
 # primaryColor="#FFFFFF"
