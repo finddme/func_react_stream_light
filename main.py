@@ -2,6 +2,16 @@ import os
 import streamlit as st
 import os
 import subprocess
+import argparse
+import six, torch
+from app.direct_streamlit import streamlit_app
+import asyncio
+from utils.doc_search import *
+from utils.config import *
+import os
+from action_agents.search_engine import Blog
+from playwright.sync_api import sync_playwright
+
 os.system("sh /mount/src/function_calling_react/func_react_stream_light/setup.sh")
 
 def install_system_dependencies():
@@ -18,17 +28,12 @@ def install_system_dependencies():
         subprocess.run(["playwright", "install", "chromium"], check=True)
     except Exception as e:
         st.error(f"Dependencies installation failed: {str(e)}")
-        
-# os.system("playwright install")      
+             
 # install_system_dependencies()
 os.system("pip install crawl4ai")
-# os.system("playwright install-deps")
-# os.system("npx playwright install-deps --dry-run")
 os.system("pip install nest-asyncio")
 os.system("crawl4ai-setup")
-# os.system("python -m playwright install chromium")
-os.system("pip install --upgrade playwright")
-os.environ['PYTHONPATH'] = os.getcwd()
+# os.environ['PYTHONPATH'] = os.getcwd()
 
 async def main(args):
     await streamlit_app(args)
@@ -38,16 +43,6 @@ async def main(args):
 #         browser = p.chromium.launch()
 #         await streamlit_app(args)
 #         browser.close()
-
-import argparse
-import six, torch
-from app.direct_streamlit import streamlit_app
-import asyncio
-from utils.doc_search import *
-from utils.config import *
-import os
-from action_agents.search_engine import Blog
-from playwright.sync_api import sync_playwright
 
 if __name__ == '__main__':
     parser = argparse.ArgumentParser()
