@@ -13,9 +13,7 @@
 [theme]
 base="light"
 primaryColor="#485de4"
-
 backgroundColor="#FFFFFF"
 secondaryBackgroundColor="#F0F2F6"
 textColor="#31333F"
 font="sans serif"
-base="light"
