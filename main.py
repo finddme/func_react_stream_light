@@ -1,6 +1,10 @@
 import os
+os.system("pip install crawl4ai")
+os.system("playwright install")
+os.system("pip install nest-asyncio")
+os.system("crawl4ai-setup")
+os.system("playwright install-deps")
 import streamlit as st
-import os
 import subprocess
 import argparse
 import six, torch
@@ -30,11 +34,6 @@ def install_system_dependencies():
         st.error(f"Dependencies installation failed: {str(e)}")
              
 # install_system_dependencies()
-os.system("pip install crawl4ai")
-os.system("playwright install")
-os.system("pip install nest-asyncio")
-os.system("crawl4ai-setup")
-os.system("playwright install-deps")
 # os.environ['PYTHONPATH'] = os.getcwd()
 
 async def main(args):
