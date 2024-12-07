@@ -12,7 +12,7 @@ import os
 from action_agents.search_engine import Blog
 from playwright.sync_api import sync_playwright
 
-os.system("sh /mount/src/function_calling_react/func_react_stream_light/setup.sh")
+os.system("sh /mount/src/func_react_stream_light/setup.sh")
 
 def install_system_dependencies():
     try:
