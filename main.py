@@ -1,9 +1,10 @@
 import os
-os.system("pip install crawl4ai")
-os.system("playwright install")
-os.system("pip install nest-asyncio")
-os.system("crawl4ai-setup")
-os.system("playwright install-deps")
+os.system("sh /mount/src/func_react_stream_light/setup.sh")
+# os.system("pip install crawl4ai")
+# os.system("playwright install")
+# os.system("pip install nest-asyncio")
+# os.system("crawl4ai-setup")
+# os.system("playwright install-deps")
 import streamlit as st
 import subprocess
 import argparse
@@ -15,8 +16,6 @@ from utils.config import *
 import os
 from action_agents.search_engine import Blog
 from playwright.sync_api import sync_playwright
-
-os.system("sh /mount/src/func_react_stream_light/setup.sh")
 
 def install_system_dependencies():
     try:
