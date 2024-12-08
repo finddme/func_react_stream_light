@@ -1,10 +1,6 @@
 import os
-os.system("sh /mount/src/func_react_stream_light/setup.sh")
-# os.system("pip install crawl4ai")
-# os.system("playwright install")
-# os.system("pip install nest-asyncio")
-# os.system("crawl4ai-setup")
-# os.system("playwright install-deps")
+# os.system("sh /mount/src/func_react_stream_light/setup.sh")
+
 import streamlit as st
 import subprocess
 import argparse
