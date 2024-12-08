@@ -41,7 +41,7 @@ async def streamlit_app(args):
     }
     </style>
     """, unsafe_allow_html=True)
-    st.markdown(""":orange[**Law | Finance | Ai | Conversation | Web search**]""", 
+    st.markdown(""":orange[**Ai | Finance | Conversation | Web search**]""", 
                 unsafe_allow_html=True)
 
     user_input = st.text_input("검색어를 입력하세요:", "")
