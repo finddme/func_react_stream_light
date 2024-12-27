@@ -30,8 +30,8 @@ def install_system_dependencies():
     except Exception as e:
         st.error(f"Dependencies installation failed: {str(e)}")
              
-# install_system_dependencies()
-# os.environ['PYTHONPATH'] = os.getcwd()
+install_system_dependencies()
+os.environ['PYTHONPATH'] = os.getcwd()
 
 async def main(args):
     await streamlit_app(args)
