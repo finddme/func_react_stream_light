@@ -1,5 +1,5 @@
 import os
-# os.system("sh /mount/src/func_react_stream_light/setup.sh")
+os.system("sh /mount/src/func_react_stream_light/setup.sh")
 
 import streamlit as st
 import subprocess
