@@ -4,4 +4,4 @@ playwright install
 crawl4ai-setup
 playwright install-deps
 pip install nest-asyncio
-
+playwright install chrome
