@@ -23,9 +23,10 @@ def install_system_dependencies():
         ]
         subprocess.run(["apt-get", "update"], check=True)
         subprocess.run(["apt-get", "install", "-y"] + packages, check=True)
-
-        subprocess.run(["playwright", "install", "chromium"], check=True)
+        
         subprocess.run(["playwright", "install", "chrome"], check=True)
+        subprocess.run(["playwright", "install", "chromium"], check=True)
+        
     except Exception as e:
         st.error(f"Dependencies installation failed: {str(e)}")
              
